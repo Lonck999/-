@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #d3dbde;
+}
+
+.mian_container {
+  margin: 20% 0 0 36%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}

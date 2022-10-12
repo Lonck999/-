@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Menu Hover Effects Change Background</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <ul>
+      <li class="lihover1" data-bg="books.png">
+        <a href="#">書籍<br />Books </a>
+      </li>
+      <li class="lihover2" data-bg="novel.png">
+        <a href="#">小說<br />Novel</a>
+      </li>
+      <li class="lihover3" data-bg="comic.png">
+        <a href="#">漫畫<br />Comic</a>
+      </li>
+      <li class="lihover4" data-bg="magazine.png">
+        <a href="#">雜誌<br />Magazine</a>
+      </li>
+      <li class="lihover5" data-bg="audiobook.png">
+        <a href="#">有聲書<br />Audiobook</a>
+      </li>
+    </ul>
+
+    <script>
+      const body = document.querySelector("body");
+      const li = document.querySelectorAll("li");
+
+      li.forEach((el) => {
+        el.addEventListener("mouseover", () => {
+          let bg = el.getAttribute("data-bg");
+          body.style.background = `url(${bg})no-repeat center /cover`;
+        });
+      });
+    </script>
+  </body>
+</html>
